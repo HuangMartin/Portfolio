@@ -9,8 +9,8 @@
 
 :root {
     --sideBGColor: #040b14;
-    --themeColor: #00A78E;
-    --iconBGColor: #2C2F3F;
+    --themeColor: #2077db;
+    --iconBGColor: #4c4d53;
     --textColor: #525252;
     --bgColor: #F7F7F7;
 }
@@ -57,4 +57,41 @@ header .profile .social-icons a{
     font-size: 18px;
     margin: 1.5px;
     transition: 0.4s;
+}
+
+header .profile .social-icons a:hover{
+    background-color: var(--themeColor);
+}
+
+header nav {
+    margin-top: 30px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color: gainsboro;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+
+header nav ul li a i{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+header nav ul li a:hover i{
+    color: var(--themeColor);
+}
+
+header nav ul li .active i{
+    color: var(--themeColor);
 }
