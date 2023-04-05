@@ -11,9 +11,9 @@
     --sideBGColor: #040b14;
     --themeColor: #287d97;
     --iconBGColor: #4c4d53;
-    --textColor: #999999;
+    --textColor: #131313;
     --bgColor: #ffffff;
-    --dotColor: #bb11ad;
+    --underColor: #bb11ad;
 }
 
 header {
@@ -200,10 +200,6 @@ main{
     line-height: 70px;
 }
 
-#home .home-row h1 span{
-    color: var(--dotColor);
-}
-
 #home .home-row p{
     color: whitesmoke;
     font-size: 30px;
@@ -211,7 +207,7 @@ main{
 }
 
 #home .home-row p span{
-    border-bottom: 4px solid var(--dotColor);
+    border-bottom: 4px solid var(--underColor);
 }
 
 @media only screen and (max-width: 670px){
@@ -300,4 +296,20 @@ main{
 #about .about-col .info-col .icon-list-col .icon-list ul li{
     list-style: none;
     margin: 15px 0;
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li i{
+    color: var(--themeColor);
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li strong{
+    color: var(--sideBGColor);
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li span{
+    color: var(--textColor);
+    font-weight: 100;
+    font-size: 15px;
 }
