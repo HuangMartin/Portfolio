@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display' ;
+    font-family: 'Playfair Display',sans-serif ;
 }
 
 :root {
@@ -21,7 +21,7 @@ header {
     padding: 15px 30px;
     background-color: var(--sideBGColor);
     overflow-y: auto;
-    position: relative;
+    position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
@@ -149,4 +149,29 @@ header .footer p a{
 
 .mobile-nav-active header .footer{
     left: 0;
+}
+
+main{
+    margin-left: 300px;
+    background-color: var(--bgColor);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width:1050px){
+    main{
+        margin-left: 0;
+    }
+}
+
+#home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/BG.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+    position: relative;
 }
