@@ -6,9 +6,9 @@ MenuBtn.addEventListener('click', function(e){
 })
 
 let typed = new Typed('.auto-input', {
-    strings:['軟體工程師', '部落客', '探險家'],
-    typespeed:100,
-    backspeed:100,
+    strings:['部落客', '探險家', '軟體工程師'],
+    typeSpeed:100,
+    backSpeed:100,
     backDelay:3000,
     loop:true,
 })

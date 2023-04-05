@@ -231,3 +231,20 @@ main{
         font-weight: 400;
     }
 }
+
+#about{
+    padding: 70px 30px;
+}
+
+.sub-heading{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.divider{
+    width: 80px;
+    height: 4px;
+    background-color: var(--themeColor);
+    border-radius: 3px;
+}
