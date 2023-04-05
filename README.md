@@ -3,5 +3,6 @@
 用來擺放網誌.廢文.社交帳號.專案經歷也是很合理的吧  
 
 ## 待實現功能
-連結各主題Blog
+陸續將各種主題Blog逐步完成
+
 ![0405](https://user-images.githubusercontent.com/80444639/230121875-7dd09433-3a93-46e2-b1a5-2debad65055a.png)
