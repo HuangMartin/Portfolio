@@ -363,4 +363,52 @@ main{
 
 #fact{
     padding: 50px 30px;
+    background-color: white;
+}
+
+#fact .fact-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+
+#fact .fact-row .fact-box i{
+    color: var(--themeColor);
+    font-size: 25px;
+}
+#fact .fact-row .fact-box strong{
+    color: var(--sideBGColor);
+    font-size: 22px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+#fact .fact-row .fact-box p{
+    color: var(--textColor);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 700px){
+    #fact{
+        padding: 40px 15px;
+    }
+    #fact .fact-row{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+@media only screen and (max-width: 455px){
+    #fact .fact-row .fact-box i{
+        font-size: 18px;
+    }
+    #fact .fact-row .fact-box strong{
+        font-size: 20px;
+    }
+    
+    #fact .fact-row .fact-box p{
+        font-weight: 400;
+        font-size: 14px;
+    }
 }
