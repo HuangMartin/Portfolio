@@ -11,7 +11,7 @@
     --sideBGColor: #040b14;
     --themeColor: #287d97;
     --iconBGColor: #4c4d53;
-    --textColor: #131313;
+    --textColor: #606060;
     --bgColor: #ffffff;
     --underColor: #bb11ad;
 }
@@ -249,7 +249,7 @@ main{
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.4px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 15px;
 }
 
@@ -359,4 +359,8 @@ main{
     #about .about-col .img-col img{
         width: 90%;
     }
+}
+
+#fact{
+    padding: 50px 30px;
 }
