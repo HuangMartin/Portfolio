@@ -412,3 +412,28 @@ main{
         font-size: 14px;
     }
 }
+
+#skill{
+    padding: 70px 30px;
+}
+
+#skill .skill-row{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#skill .skill-row .skill-box .skill-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+#skill .skill-row .skill-box .skill-info h2{
+    color: var(--sideBGColor);
+    font-weight: 500;
+    font-size: 14px;
+    font-style: italic;
+}
