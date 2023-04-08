@@ -502,3 +502,10 @@ main{
     border: 2px solid var(--themeColor);
     background-color: #ffffff;
 }
+
+#resume .resume-row .resume-cols h3{
+    color: var(--sideBGColor);
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
