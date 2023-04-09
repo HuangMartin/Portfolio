@@ -618,3 +618,22 @@ main{
 #profolio{
     padding: 70px 30px;
 }
+
+#profolio .port-row{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+
+#profolio .port-row .port-item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+}
+
+#profolio .port-row .port-item img{
+    width: 100%;
+    border-radius: 10px;
+}
