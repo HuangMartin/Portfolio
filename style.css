@@ -737,3 +737,8 @@ main{
     transition: 0.7s;
     text-align: center;
 }
+
+#else .else-row .else-box:hover .icon i {
+    color: var(--themeColor);
+    background-color: var(--bgColor);
+}
