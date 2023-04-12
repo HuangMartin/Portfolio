@@ -310,7 +310,7 @@ main{
 
 #about .about-col .info-col .icon-list-col .icon-list ul li span{
     color: var(--textColor);
-    font-weight: 100;
+    font-weight: 500;
     font-size: 15px;
 }
 
@@ -664,7 +664,7 @@ main{
 
 #profolio .port-row .port-item .port-info h4{
     color: var(--bgColor);
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 600;
 }
 
@@ -676,7 +676,7 @@ main{
 #profolio .port-row .port-item .port-info a{
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 23px;
     width: 45px;
     height: 45px;
     background-color: var(--bgColor);
@@ -692,17 +692,17 @@ main{
 }
 
 @media only screen and (max-width: 700px){
-    #portfolio{
+    #port{
         padding: 50px 10px;
     }
-    #portfolio .port-row{
+    #profolio.port-row{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
     }
 }
 
-@media only screen and (max-width: 455px){
-    #portfolio .port-row{
+@media only screen and (max-width: 600px){
+    #profolio .port-row{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 15px;
     }
@@ -741,4 +741,146 @@ main{
 #else .else-row .else-box:hover .icon i {
     color: var(--themeColor);
     background-color: var(--bgColor);
+}
+
+#else .else-row .else-box .else-info h4{
+    color: var(--sideBGColor);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 700px){
+    #else{
+        padding: 50px 15px;
+    }
+    #else .else-row{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #else{
+        padding: 50px 15px;
+    }
+    #else .else-row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+#contact{
+    padding: 70px 30px;
+}
+
+#contact .contact-row{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+#contact .contact-row .contact-left{
+    flex-basis: 40%;
+    min-width: 40%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 30%);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#contact .contact-row .contact-left .icon-box{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 18px 0;
+}
+
+#contact .contact-row .contact-left .icon-box .icon i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--themeColor);
+    text-align: center;
+    line-height: 47px;
+    font-size: 20px;
+    color: var(--themeColor);
+    transition: 0.5s;
+}
+
+#contact .contact-row .contact-left .icon-box:hover .icon i{
+    color: var(--bgColor);
+    background-color: var(--themeColor);
+}
+
+#contact .contact-row .contact-left .icon-box .info h4{
+    font-size: 20px;
+    color: var(--sideBGColor);
+    font-weight: 600;
+}
+
+#contact .contact-row .contact-left .icon-box .info h4 + p{
+    color: var(--textColor);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#contact .contact-row .contact-left .map iframe{
+    border-radius: 30px;
+}
+
+#contact .contact-row .contact-right{
+    flex-basis: 60%;
+    min-width: 60%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 30%);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#contact .contact-row .contact-right form input,
+#contact .contact-row .contact-right form textarea{
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--textColor);
+    padding: 10px 20px;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+    outline: none;
+    resize: none;
+    transition: 0.5s;
+}
+
+#contact .contact-row .contact-right form input:focus,
+#contact .contact-row .contact-right form textarea:focus{
+    border: 2px solid var(--themeColor);
+}
+
+#contact .contact-row .contact-right form input[type=submit]{
+    background-color: var(--themeColor);
+    color: var(--bgColor);
+    border: 2px solid var(--themeColor);
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 855px){
+    #contact{
+        padding: 50px;
+    }
+    #contact .contact-row{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    #contact{
+        padding: 50px 10px;
+    }
+
 }
