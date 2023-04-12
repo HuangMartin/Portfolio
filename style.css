@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display',sans-serif ;
+    scroll-behavior: smooth;
 }
 
 :root {
