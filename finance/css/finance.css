@@ -15,3 +15,21 @@ header{
     background-image: url(/img/wallstreet.jpg);
     background-size: cover;
 }
+
+.navbar{
+    position: absolute;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+}
