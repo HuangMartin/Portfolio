@@ -441,12 +441,12 @@
                 <div class="contact-right">
 
 
-                    <form action="">
+                    <form action="send.php" method="post">
                         <input type="text" name="name" id="name" placeholder="您的大名">
                         <input type="email" name="email" id="email" placeholder="您的電子郵件">
                         <input type="text" name="subject" id="subject" placeholder="主旨">
                         <textarea name="msg" id="msg" rows="9" placeholder="您想建議的事項"></textarea>
-                        <input type="submit" value="送出信件">
+                        <input type="submit" name="btn" value="送出信件">
                     </form>
 
                 </div>
@@ -461,5 +461,3 @@
     <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<!-- 1:32:36 -->
