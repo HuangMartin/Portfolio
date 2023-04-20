@@ -16,18 +16,20 @@ if (isset($_POST['name']) && isset($_POST['email'])  && isset($_POST['subject'])
     $msg = validate($_POST['msg']);
 
     if (empty($name) || empty($email) || empty($msg)){
-        header("Location: index.html");
+        header("Location: index.php");
     }else{
         $sql = "INSERT INTO portfolio(name, email, subject ,msg) VALUES('$name', '$email', '$subject', '$msg')";
         $res = mysqli_query($conn, $sql);
 
         if ($res){
             echo "成功送出信件!";
+            header("");
+
         }else{
             echo "哪裡出錯了QQ";
         }
     }
 
 }else{
-    header("Location: index.html");
+    header("Location: index.php");
 }
