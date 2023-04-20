@@ -240,6 +240,16 @@
                 <div class="resume-cols">
                     <h2>工作經歷</h2>
                     <div class="work-exp">
+                        <h3>程設作業代寫</h3>
+                        <span class="sp-box">2022-仍在職</span>
+                        <p>代寫</p>
+                        <ul>
+                            <li>在蝦皮看到的一門生意，覺得挺有意思的<br>
+                                於是抱著玩票性質嘗試看看<br>
+                                不知道會維持多久，也不知道會走多遠</li>
+                        </ul>
+                    </div>
+                    <div class="work-exp">
                         <h3>夢旅人開發團隊</h3>
                         <span class="sp-box">2022-仍在職</span>
                         <p>助理工程師</p>
@@ -280,7 +290,7 @@
                     <div class="port-info">
                         <h4>金融經濟</h4>
                         <p>Finance Notes</p>
-                        <a href="#"><i class="fa-regular fa-window-restore"></i></a>
+                        <a href="#"><i class="fa-solid fa-coins"></i></a>
                     </div>
                 </div>
 
@@ -291,7 +301,7 @@
                     <div class="port-info">
                         <h4>電影評論</h4>
                         <p>Movie Review</p>
-                        <a href="#"><i class="fa-regular fa-window-restore"></i></a>
+                        <a href="#"><i class="fa-solid fa-film"></i></a>
                     </div>
                 </div>
 
@@ -302,7 +312,7 @@
                     <div class="port-info">
                         <h4>旅遊規劃</h4>
                         <p>Travel</p>
-                        <a href="#"><i class="fa-regular fa-window-restore"></i></a>
+                        <a href="#"><i class="fa-solid fa-plane"></i></a>
                     </div>
                 </div>
 
@@ -313,7 +323,7 @@
                     <div class="port-info">
                         <h4>Event與WWDC</h4>
                         <p>Apple Event and WWDC</p>
-                        <a href="#"><i class="fa-regular fa-window-restore"></i></a>
+                        <a href="#"><i class="fa-solid fa-microchip"></i></a>
                     </div>
                 </div>
 
@@ -324,7 +334,7 @@
                     <div class="port-info">
                         <h4>奢華享受</h4>
                         <p>Liquor and Cigar</p>
-                        <a href="#"><i class="fa-regular fa-window-restore"></i></a>
+                        <a href="#"><i class="fa-solid fa-wine-glass"></i></a>
                     </div>
                 </div>
             </div>
