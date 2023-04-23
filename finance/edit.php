@@ -11,17 +11,19 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <title>Blog</title>
+    <title>編輯發文</title>
 </head>
 <body>
     <div class="container mt-5">
-        <form method="GET">
-            <input type="text" name="title" placeholder="Blog Title" class="form-control bg-dark text-white my-3 text-center">
-            <textarea name="content" class="form-control bg-dark text-white my-3"></textarea>
-            <button name="new_post" class="btn btn-dark">新增貼文</button>
-        </form>
+        <?php foreach($query as $q) { ?>
+            <form method="GET">
+                <input type="text" hidden name="id" value="<?php echo $q['id'];?>">
+                <input type="text" name="title" placeholder="Blog Title" class="form-control bg-dark text-white my-3 text-center" value="<?php echo $q['title'];?>">
+                <textarea name="content" class="form-control bg-dark text-white my-3"><?php echo $q['content'];?></textarea>
+                <button name="update" class="btn btn-dark">更新貼文</button>
+            </form>
+        <?php } ?>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

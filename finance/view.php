@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <title>Document</title>
+    <title>XXXXXXXXXXX</title>
 </head>
 <body>
     <div class="container mt-5">
@@ -19,8 +19,12 @@
             <div class="bg-dark p-5 rounded-lg text-white text-center">
                 <h1><?php echo $q['title'];?></h1>
 
-                <div>
-                    <a href="edit.php?id=<?php echo $q['id'];?>">編輯</a>
+                <div class="d-flex mt-2 justify-content-center align-items-center">
+                    <a href="edit.php?id=<?php echo $q['id'];?>" class="btn btn-light btn-sm">編輯</a>
+                    <form action="POST">
+                        <input type="text" hidden name="id" value="<?php echo $q["id"];?>">
+                        <button class="btn btn-danger btn-sm ml-2">刪除</button>
+                    </form>
                 </div>
 
             </div>

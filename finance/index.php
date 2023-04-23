@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <title>Blog</title>
+    <title>主頁</title>
 </head>
 <body>
     <div class="container mt-5">
@@ -20,6 +20,10 @@
             <?php if($_REQUEST['info'] == "added"){?>
                 <div class="alert alert-success" role="alert">
                     成功發布新貼文!
+                </div>
+            <?php }else if($_REQUEST['info'] == "updated"){ ?>
+                <div class="alert alert-success" role="alert">
+                    成功更新貼文!
                 </div>
             <?php } ?>
         <?php } ?>
