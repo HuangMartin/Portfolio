@@ -23,7 +23,7 @@
                     <a href="edit.php?id=<?php echo $q['id'];?>" class="btn btn-light btn-sm">編輯</a>
                     <form action="POST">
                         <input type="text" hidden name="id" value="<?php echo $q["id"];?>">
-                        <button class="btn btn-danger btn-sm ml-2">刪除</button>
+                        <button class="btn btn-danger btn-sm ml-2" name="delete">刪除</button>
                     </form>
                 </div>
 

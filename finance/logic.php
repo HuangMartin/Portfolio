@@ -41,4 +41,14 @@
         exit();
     }
 
+    if(isset($_REQUEST['deleted'])){
+        $id = $_REQUEST['id'];
+        
+        $sql = "DELETE FROM data WHERE id = $id";
+        $query = mysqli_query($conn, $sql);
+
+        header("Location: index.php?info=deleted");
+        exit();
+    }
+
 ?>

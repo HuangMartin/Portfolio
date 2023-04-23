@@ -25,6 +25,10 @@
                 <div class="alert alert-success" role="alert">
                     成功更新貼文!
                 </div>
+            <?php }else if($_REQUEST['info'] == "deleted"){ ?>
+                <div class="alert alert-danger" role="alert">
+                    成功刪除貼文!
+                </div>
             <?php } ?>
         <?php } ?>
         
