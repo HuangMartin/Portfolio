@@ -21,4 +21,13 @@
         header("Location: index.php?inf=added");
         exit();
     }
+
+    if(isset($_REQUEST['id'])){
+        $id = $_REQUEST['id'];
+        
+        $sql = "SELECT * FROM data WHERE id = $id";
+        $query = mysqli_query($conn, $sql);
+    }
+
+
 ?>

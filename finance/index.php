@@ -36,15 +36,13 @@
                         <div class="card-body" style="width: 18rem;">
                             <h5 class="card-title"><?php echo $q['title'];?></h5>
                             <p class="card-text"><?php echo $q['content'];?></p>
-                            <a href="view.php"class="btn btn-light">Read More<span class="text-danger">&rarr;</span></a>
+                            <a href="view.php?id=<?php echo $q['id'];?>"class="btn btn-light">Read More<span class="text-danger">&rarr;</span></a>
                         </div>
                     </div>
                 </div>
-        <?php } ?>
+            <?php } ?>
         </div>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
