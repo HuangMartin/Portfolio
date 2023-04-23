@@ -15,10 +15,35 @@
 </head>
 <body>
     <div class="container mt-5">
+
+        <?php if(isset($_REQUEST['info'])){?>
+            <?php if($_REQUEST['info'] == "added"){?>
+                <div class="alert alert-success" role="alert">
+                    成功發布新貼文!
+                </div>
+            <?php } ?>
+        <?php } ?>
+        
         <div class="text-center">
             <a href="create.php" class="btn btn-outline-dark">發布新貼文</a>
         </div>
+
+        <div class="row">
+
+            <?php foreach($query as $q){?>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <div class="card text-white bg-dark mt-5">
+                        <div class="card-body" style="width: 18rem;">
+                            <h5 class="card-title"><?php echo $q['title'];?></h5>
+                            <p class="card-text"><?php echo $q['content'];?></p>
+                            <a href="view.php"class="btn btn-light">Read More<span class="text-danger">&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+        <?php } ?>
+        </div>
     </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

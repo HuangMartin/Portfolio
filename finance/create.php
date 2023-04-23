@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <form method="POST">
+        <form method="GET">
             <input type="text" name="title" placeholder="Blog Title" class="form-control bg-dark text-white my-3 text-center">
             <textarea name="content" class="form-control bg-dark text-white my-3"></textarea>
             <button name="new_post" class="btn btn-dark">Add Post</button>
@@ -28,6 +28,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
 </body>
 </html>
-
-
-<!-- 7:58 -->
