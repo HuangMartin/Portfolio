@@ -41,7 +41,7 @@
         exit();
     }
 
-    if(isset($_REQUEST['deleted'])){
+    if(isset($_REQUEST['delete'])){
         $id = $_REQUEST['id'];
         
         $sql = "DELETE FROM data WHERE id = $id";
