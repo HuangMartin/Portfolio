@@ -1,3 +1,10 @@
+<?php
+    require_once('db.php');
+
+    $sql = "SELECT * FROM `data`";
+    $result = $con -> query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,3 +20,25 @@
             老王愛說笑
         </h1>
     </div>
+
+    <div class="container">
+        <table class="table table-striped table-borderrer">
+            <tr>
+                <th>標題</th>
+                <th>日期</th>
+            </tr>
+
+            <?php
+                if($result -> num_rows >0){
+                    while($row = $result -> fetch_assoc()){
+                        echo "<tr>";
+                        echo "<td>" . $row['title'] . "</td>";
+                        echo "<td>" . $row['date'] . "</td>";
+                        echo "</tr>";
+                    }
+                }
+            ?>
+        </table>
+    </div>
+</body>
+</html>

@@ -8,6 +8,6 @@
     if($con -> connect_error){
         die("哪裡出錯了QQ");
     }else{
-        echo "連線成功!!";
+        // echo "連線成功!!";
     }
 ?>
