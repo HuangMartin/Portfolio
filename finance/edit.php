@@ -32,7 +32,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3 col-sm-12">
-                <form action="submit.php" method="POST">
+                <form action="modify.php?id=<?= $id ?>" method="POST">
                     <h3>您正在編輯頁面!!</h3>
                     <div class="form-group">
                         <label for="title">標題</label>
@@ -46,7 +46,7 @@
                         <label for="description">內文</label>
                         <textarea class="form-control" name="description" id="description" cols="42" rows="15"><?= $data['description']?></textarea>
                     </div>
-                    <input type="submit" name="submitForm" value="submit" class="btn btn-primary btn-block">
+                    <input type="submit" name="editForm" value="submit" class="btn btn-primary btn-block">
                 </form>
             </div>
         </div>

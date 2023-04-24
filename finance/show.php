@@ -30,6 +30,10 @@
                             <p class="card-text"><?php echo $q['date'];?></p>
                             <p class="card-text"><?php echo $q['description'];?></p>
                             <a href="view.php?id=<?php echo $q['id']?>" class="btn btn-light">Read More <span class="text-danger">&rarr;</span></a>
+                            <div class="btn-group">
+                                <a class="btn btn-secondary" href="edit.php?id=<?php echo $q['id']?>">編輯</a>
+                                <a class="btn btn-danger" href="delete.php?id=<?php echo $q['id']?>">刪除</a>
+                            </div>
                         </div>
                     </div>
                 </div>
