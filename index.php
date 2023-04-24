@@ -291,7 +291,7 @@
                     <div class="port-info">
                         <h4>金融經濟</h4>
                         <p>Finance Notes</p>
-                        <a href="#"><i class="fa-solid fa-coins"></i></a>
+                        <a href="http://localhost/Portfolio/finance/show.php"><i class="fa-solid fa-coins"></i></a>
                     </div>
                 </div>
 

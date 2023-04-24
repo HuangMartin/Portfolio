@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="http://localhost/Portfolio/finance/index.php">Home</a>
+                        <a class="nav-link" href="http://localhost/Portfolio/finance/index.php">新增貼文</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost/Portfolio/finance/show.php">查看所有貼文</a>
