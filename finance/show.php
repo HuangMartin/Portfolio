@@ -21,24 +21,19 @@
         </h1>
     </div>
 
-    <div class="container">
-        <table class="table table-striped table-borderrer">
-            <tr>
-                <th>標題</th>
-                <th>日期</th>
-            </tr>
-
-            <?php
-                if($result -> num_rows >0){
-                    while($row = $result -> fetch_assoc()){
-                        echo "<tr>";
-                        echo "<td>" . $row['title'] . "</td>";
-                        echo "<td>" . $row['date'] . "</td>";
-                        echo "</tr>";
-                    }
-                }
-            ?>
-        </table>
+    <div class="row">
+            <?php foreach($result as $q){?>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <div class="card text-white bg-dark mt-5">
+                        <div class="card-body" style="width: 18rem;">
+                            <h5 class="card-title"><?php echo $q['title'];?></h5>
+                            <p class="card-text"><?php echo $q['date'];?></p>
+                            <p class="card-text"><?php echo $q['description'];?></p>
+                            <a href="view.php?id=<?php echo $q['id']?>" class="btn btn-light">Read More <span class="text-danger">&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            <?php }?>
     </div>
 </body>
 </html>
