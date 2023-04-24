@@ -1,0 +1,15 @@
+.card-body{
+    flex: 1 0 15em;
+    background: rgb(58, 58, 58);
+}
+
+.card-body .card-title .card-text{
+    padding: 6px;
+}
+
+.card-body .card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

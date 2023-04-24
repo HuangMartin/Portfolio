@@ -14,6 +14,7 @@ $result = $con->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>💰</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@ $result = $con->query($sql);
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="http://localhost/Portfolio/finance/index.php">Home</a>
+                        <a class="nav-link" href="http://localhost/Portfolio/finance/index.php">新增貼文</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost/Portfolio/finance/show.php">查看所有貼文</a>
@@ -44,7 +45,7 @@ $result = $con->query($sql);
     <div class="row">
         <?php foreach ($result as $q) { ?>
             <div class="col-4 d-flex justify-content-center align-items-center">
-                <div class="card text-white bg-dark mt-5">
+                <div class="card text-white bg-dark mt-3"> 
                     <div class="card-body" style="width: 18rem;">
                         <h5 class="card-title"><?php echo $q['title']; ?></h5>
                         <p class="card-text"><?php echo $q['date']; ?></p>
@@ -60,5 +61,4 @@ $result = $con->query($sql);
         <?php } ?>
     </div>
 </body>
-
 </html>
