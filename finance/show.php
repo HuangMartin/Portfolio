@@ -22,14 +22,17 @@ $result = $con->query($sql);
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand">💰</a>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
-            </label>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
-                    <li><a class="active" href="http://localhost/Portfolio/finance/index.php">新增貼文</a></li>
-                    <li><a class="active" href="http://localhost/Portfolio/finance/show.php">查看所有貼文</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://localhost/Portfolio/finance/index.php">新增貼文</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/Portfolio/finance/show.php">查看所有貼文</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -47,7 +50,7 @@ $result = $con->query($sql);
                     <div class="card-body" style="width: 18rem;">
                         <h5 class="card-title"><?php echo $q['title']; ?></h5>
                         <p class="card-text"><?php echo $q['date']; ?></p>
-                        <p class="card-text"><?php echo $q['description']; ?></p>
+                        <p class="card-text"><?php echo nl2br($q['description']);?></p>
                         <a href="view.php?id=<?php echo $q['id'] ?>" class="btn btn-light">Read More <span class="text-danger">&rarr;</span></a>
                         <div class="btn-group">
                             <a class="btn btn-secondary" href="edit.php?id=<?php echo $q['id'] ?>">編輯</a>

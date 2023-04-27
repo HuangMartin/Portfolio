@@ -28,7 +28,7 @@
                     <h1><?php echo $q['title'];?></h1>
                 </div>
                 <p><?php echo $q['date'];?></p>
-                <p><?php echo $q['description'];?></p>
+                <p><?php echo nl2br($q['description']);?></p>
             <?php }?>
     </div>
 </body>
