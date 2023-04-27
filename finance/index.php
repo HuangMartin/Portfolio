@@ -16,8 +16,7 @@
         <a class="logo">💰</a>
         <div class="nav-links">
             <ul>
-                <li><a href="#">新增貼文</a></li>
-                <li><a href="#">查看所有貼文</a></li>
+                <li><a href="http://localhost/Portfolio/finance/show.php">查看所有貼文</a></li>
             </ul>
         </div>
     </nav>
