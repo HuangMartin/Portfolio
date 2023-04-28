@@ -1,20 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins';
+body {
+    font-family: 'Poppins' , sans-serif;
 }
 
-header{
-    height: 100vh;
-    width: 100bvw;
-}
-
-.navbar{
+.navbar {
     background-color: rgb(85, 85, 85);
     position: absolute;
     display: flex;
@@ -24,20 +20,24 @@ header{
     box-sizing: border-box;
 }
 
-.navbar a{
+.navbar a {
     color: white;
 }
 
-.navbar .logo{
+.navbar .logo {
     font-size: 30px;
     font-weight: bold;
 }
 
-.navbar .nav-links ul{
+.navbar .nav-links ul {
     display: flex;
- }
+}
 
-.navbar .nav-links ul li{
-    margin:0 15px;
+.navbar .nav-links ul li {
+    margin: 0 15px;
     font-size: 18px;
+}
+
+.card .card-body {
+    background-color: gray;
 }
