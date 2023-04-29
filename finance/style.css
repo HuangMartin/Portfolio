@@ -40,4 +40,5 @@ body {
 
 .card .card-body {
     background-color: gray;
+    width: 250px;
 }
