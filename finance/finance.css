@@ -38,7 +38,7 @@ body {
     font-size: 18px;
 }
 
-.box-container{
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,11 +46,17 @@ body {
     background: #ffffff;
 } 
 
-.box{
+.cards{
+    width: 30%;
     flex: 1 1 300px;
-    background: rgb(199, 199, 199);
+    background-color:gray;
     border: 1px solid rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
     margin: 15px;
+}
+
+.cards .card-title ,
+.cards .card-date{
+    text-align: center;
 }

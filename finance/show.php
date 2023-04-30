@@ -35,14 +35,14 @@ $result = $con->query($sql);
         </h1>
     </div>
 
-    <div class="box-container">
+    <div class="container">
         <?php foreach ($result as $q) { ?>
             <div class="col-4 d-flex justify-content-center align-items-center">
-                <div class="box">
+                <div class="cards">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $q['title']; ?></h5>
-                        <p class="card-text"><?php echo $q['date']; ?></p>
-                        <p class="card-text"><?php echo nl2br($q['description']); ?></p>
+                        <p class="card-date"><?php echo $q['date']; ?></p>
+                        <p class="card-des"><?php echo nl2br($q['description']); ?></p>
                         <a href="view.php?id=<?php echo $q['id'] ?>" class="btn btn-light">Read More <span class="text-danger">&rarr;</span></a>
                         <div class="btn-group">
                             <a class="btn btn-secondary" href="edit.php?id=<?php echo $q['id'] ?>">編輯</a>
