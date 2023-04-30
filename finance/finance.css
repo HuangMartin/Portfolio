@@ -4,9 +4,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Poppins' , sans-serif;
 }
 
@@ -38,25 +35,43 @@ body {
     font-size: 18px;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #ffffff;
-} 
-
 .cards{
-    width: 30%;
-    flex: 1 1 300px;
-    background-color:gray;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    margin: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 15px;
+    border-radius: 10px;
 }
 
-.cards .card-title ,
-.cards .card-date{
+.card{
+    box-shadow: 2px 2px 10px rgba(110, 110, 110, 0.4);
+}
+
+.card .card-title ,
+.card .card-date{
     text-align: center;
+    font-weight: 500;
+}
+
+.card .card-des{
+    line-height: 1.5;
+    font-size: large;
+    padding: 5px;
+}
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    margin-right: 8px;
+}
+
+.card .btn-read{
+    text-decoration: none;
+    color: rgb(0, 17, 255);
+}
+
+.card .btn-read:hover{
+    text-decoration: underline;
 }
