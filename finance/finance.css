@@ -37,8 +37,3 @@ body {
     margin: 0 15px;
     font-size: 18px;
 }
-
-.card .card-body {
-    background-color: gray;
-    width: 250px;
-}
