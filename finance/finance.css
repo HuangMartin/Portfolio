@@ -40,7 +40,7 @@
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    gap: 15px;
+    gap: 20px;
     border-radius: 10px;
 }
 
@@ -58,6 +58,11 @@
     line-height: 1.5;
     font-size: large;
     padding: 5px;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .btn-group{

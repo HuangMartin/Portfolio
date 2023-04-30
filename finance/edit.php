@@ -23,7 +23,7 @@ $data = $result->fetch_assoc();
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>💰編輯貼文</title>
     <link rel="icon" href="img/money.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="finance.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 
