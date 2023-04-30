@@ -37,3 +37,20 @@ body {
     margin: 0 15px;
     font-size: 18px;
 }
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #ffffff;
+} 
+
+.box{
+    flex: 1 1 300px;
+    background: rgb(199, 199, 199);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+}

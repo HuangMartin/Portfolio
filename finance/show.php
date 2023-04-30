@@ -35,10 +35,10 @@ $result = $con->query($sql);
         </h1>
     </div>
 
-    <div class="container">
+    <div class="box-container">
         <?php foreach ($result as $q) { ?>
             <div class="col-4 d-flex justify-content-center align-items-center">
-                <div class="card">
+                <div class="box">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $q['title']; ?></h5>
                         <p class="card-text"><?php echo $q['date']; ?></p>
