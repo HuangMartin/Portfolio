@@ -16,6 +16,7 @@ $result = $con->query($sql);
     <title>💰查看所有貼文</title>
     <link rel="icon" href="img/money.png" type="image/x-icon">
     <link rel="stylesheet" href="finance.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 
@@ -50,6 +51,17 @@ $result = $con->query($sql);
                     </div>
                 </div>
         <?php } ?>
+    </div>
+
+    <div class="pagination">
+        <li class="page-item previous-page"><a class="page-link" href="#">上一頁</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#">1</a></li>
+        <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+        <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+        <li class="page-item next-page"><a class="page-link" href="#">下一頁</a></li>
     </div>
 </body>
 
