@@ -80,3 +80,23 @@
 .card .btn-read:hover {
     text-decoration: underline;
 }
+
+.container{
+    max-height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagination{
+    text-align: center;
+    margin: 30px 30px 60px;
+    user-select: none;
+}
+
+.pagination li{
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 2px 25px rgba(1, 1, 1, 0.2);
+}

@@ -33,6 +33,7 @@ $result = $con->query($sql);
     <div class="jumbotron">
         <h1 class="text-center">老王愛說笑</h1>
     </div>
+
     <div class="cards">
         <?php foreach ($result as $q) { ?>
             <div class="card">
@@ -49,6 +50,20 @@ $result = $con->query($sql);
             </div>
         <?php } ?>
     </div>
+    <div class="container">
+        <div class="pagination">
+            <li class="page-item previous-page"><a class="page-link" href="#">上一頁</a></li>
+            <li class="page-item current-page"><a class="page-link" href="#">1</a></li>
+            <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+            <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+            <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+            <li class="page-item current-page"><a class="page-link" href="#">7</a></li>
+            <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+            <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+            <li class="page-item next-page"><a class="page-link" href="#">下一頁</a></li>
+        </div>
+    </div>
+
 </body>
 
 </html>
