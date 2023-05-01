@@ -31,37 +31,23 @@ $result = $con->query($sql);
         </div>
     </nav>
     <div class="jumbotron">
-        <h1 class="text-center">
-            老王愛說笑
-        </h1>
+        <h1 class="text-center">老王愛說笑</h1>
     </div>
-
     <div class="cards">
         <?php foreach ($result as $q) { ?>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><?php echo $q['title']; ?></h5>
-                        <p class="card-date"><?php echo $q['date']; ?></p>
-                        <p class="card-des"><?php echo nl2br($q['description']); ?></p>
-                        <div class="btn-group">
-                            <a class="btn btn-secondary" href="edit.php?id=<?php echo $q['id'] ?>">編輯</a>
-                            <a class="btn btn-danger" href="delete.php?id=<?php echo $q['id'] ?>">刪除</a>
-                        </div>
-                        <a href="view.php?id=<?php echo $q['id'] ?>" class="btn-read">Read More</a>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $q['title']; ?></h5>
+                    <p class="card-date"><?php echo $q['date']; ?></p>
+                    <p class="card-des"><?php echo nl2br($q['description']); ?></p>
+                    <div class="btn-group">
+                        <a class="btn btn-secondary" href="edit.php?id=<?php echo $q['id'] ?>">編輯</a>
+                        <a class="btn btn-danger" href="delete.php?id=<?php echo $q['id'] ?>">刪除</a>
                     </div>
+                    <a href="view.php?id=<?php echo $q['id'] ?>" class="btn-read">Read More</a>
                 </div>
+            </div>
         <?php } ?>
-    </div>
-
-    <div class="pagination">
-        <li class="page-item previous-page"><a class="page-link" href="#">上一頁</a></li>
-        <li class="page-item current-page"><a class="page-link" href="#">1</a></li>
-        <li class="page-item dots"><a class="page-link" href="#">...</a></li>
-        <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
-        <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
-        <li class="page-item dots"><a class="page-link" href="#">...</a></li>
-        <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
-        <li class="page-item next-page"><a class="page-link" href="#">下一頁</a></li>
     </div>
 </body>
 
