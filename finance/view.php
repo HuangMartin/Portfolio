@@ -36,7 +36,7 @@ $result = $con->query($sql);
         </h1>
     </div>
 
-    <div class="container mt-5">
+    <div class="container">
         <?php foreach ($result as $q) { ?>
             <div>
                 <h1><?php echo $q['title']; ?></h1>

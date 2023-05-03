@@ -44,8 +44,8 @@ $result = $con->query($sql);
                     <div class="btn-group">
                         <a class="btn btn-secondary" href="edit.php?id=<?php echo $q['id'] ?>">編輯</a>
                         <a class="btn btn-danger" href="delete.php?id=<?php echo $q['id'] ?>">刪除</a>
-                        <a class="btn btn-dark"href="view.php?id=<?php echo $q['id'] ?>">Read More</a>
                     </div>
+                    <a href="view.php?id=<?php echo $q['id'] ?>">Read More</a>
                 </div>
             </div>
         <?php } ?>
