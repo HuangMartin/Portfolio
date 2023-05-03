@@ -1,7 +1,8 @@
 <?php
 require_once('db.php');
 
-$sql = "SELECT * FROM `data`";
+$id = $_REQUEST['id'];
+$sql = "SELECT * FROM `data` WHERE id = $id";
 $result = $con->query($sql);
 ?>
 
