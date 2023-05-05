@@ -38,31 +38,29 @@ $data = $result->fetch_assoc();
         </div>
     </nav>
     <div class="jumbotron">
-        <h1 class="text-center">
-            老王愛說笑
-        </h1>
+        <h1 class="text-center">卡爾先生</h1>
     </div>
 
-        <div class="row">
-            <div class="col-md-6 offset-md-3 col-sm-12">
-                <form action="modify.php?id=<?= $id ?>" method="POST">
-                    <h3>您正在編輯頁面!!</h3>
-                    <div class="form-group">
-                        <label for="title">標題</label>
-                        <input type="text" class="form-control" name="title" id="title" value="<?= $data['title'] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="date">日期</label>
-                        <input type="date" class="form-control" name="date" id="date" value="<?= $data['date'] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="description">內文</label>
-                        <textarea class="form-control" name="description" id="description" cols="42" rows="15"><?= $data['description'] ?></textarea>
-                    </div>
-                    <input type="submit" name="editForm" value="submit" class="btn btn-primary btn-block">
-                </form>
-            </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-sm-12">
+            <form action="modify.php?id=<?= $id ?>" method="POST">
+                <h3>您正在編輯頁面!!</h3>
+                <div class="form-group">
+                    <label for="title">標題</label>
+                    <input type="text" class="form-control" name="title" id="title" value="<?= $data['title'] ?>">
+                </div>
+                <div class="form-group">
+                    <label for="date">日期</label>
+                    <input type="date" class="form-control" name="date" id="date" value="<?= $data['date'] ?>">
+                </div>
+                <div class="form-group">
+                    <label for="description">內文</label>
+                    <textarea class="form-control" name="description" id="description" cols="42" rows="15"><?= $data['description'] ?></textarea>
+                </div>
+                <input type="submit" name="editForm" value="submit" class="btn btn-primary btn-block">
+            </form>
         </div>
+    </div>
 </body>
 
 </html>

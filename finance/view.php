@@ -31,9 +31,7 @@ $result = $con->query($sql);
         </div>
     </nav>
     <div class="jumbotron">
-        <h1 class="text-center">
-            老王愛說笑
-        </h1>
+        <h1 class="text-center">卡爾先生</h1>
     </div>
 
     <div class="container">
