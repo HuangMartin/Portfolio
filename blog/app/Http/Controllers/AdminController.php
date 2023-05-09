@@ -8,6 +8,6 @@ class AdminController extends Controller
 {
     //登入
     function login(){
-        return view('login');
+        return view('backend.login');
     }
 }
