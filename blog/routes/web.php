@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/admin/login', [AdminController::class, 'login']);
+Route::post('/admin/login', [AdminController::class, 'submit_login']);
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
