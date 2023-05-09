@@ -16,7 +16,7 @@ class AdminController extends Controller
     function submit_login(Request $request){
         $request->validate([
             'username'=>'required',
-            'password'=>'password'
+            'password'=>'required'
         ]);
 
         $userCheck = Admin::where(['username'=>$request->username, 'password'=>$request->password])->count();
