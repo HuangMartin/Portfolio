@@ -1,46 +1,44 @@
 
 <!doctype html>
-<html lang="en" dir="ltr">
+<!--
+* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+* @version 1.0.0-beta17
+* @link https://tabler.io
+* Copyright 2018-2023 The Tabler Authors
+* Copyright 2018-2023 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+-->
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="theme-color" content="#4188c9">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2018-04-06 16:27:42 +0200 -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>@yield('pageTitle')</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
-    <script src="./back/assets/require.min.js"></script>
-    <script>
-      requirejs.config({
-          baseUrl: '.'
-      });
-    </script>
-    <!-- Dashboard Core -->
-    <link href=".back/assets/css/dashboard.css" rel="stylesheet" />
-    <script src=".back/assets/js/dashboard.js"></script>
-    <!-- c3.js Charts Plugin -->
-    <link href=".back/assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
-    <script src=".back/assets/plugins/charts-c3/plugin.js"></script>
-    <!-- Google Maps Plugin -->
-    <link href=".back/assets/plugins/maps-google/plugin.css" rel="stylesheet" />
-    @stack('stylesheets')
-    <script src=".back/assets/plugins/maps-google/plugin.js"></script>
-    
-    <!-- Input Mask Plugin -->
-    <script src=".back/assets/plugins/input-mask/plugin.js"></script>
-    @stack('scripts')
+    <base href="/">
+    <!-- CSS files -->
+    <link href="./back/dist/css/tabler.min.css?1674944402" rel="stylesheet"/>
+    <link href="./back/dist/css/tabler-flags.min.css?1674944402" rel="stylesheet"/>
+    <link href="./back/dist/css/tabler-payments.min.css?1674944402" rel="stylesheet"/>
+    <link href="./back/dist/css/tabler-vendors.min.css?1674944402" rel="stylesheet"/>
+    @stack('stylesheet')
+    <link href="./back/dist/css/demo.min.css?1674944402" rel="stylesheet"/>
+    <style>
+      @import url('https://rsms.me/inter/inter.css');
+      :root {
+      	--tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+      body {
+      	font-feature-settings: "cv03", "cv04", "cv11";
+      }
+    </style>
   </head>
-  <body class="">
+  <body  class=" d-flex flex-column">
     @yield('content')
+
+
+    <script src="./back/dist/js/demo-theme.min.js?1674944402"></script>
+    <script src="./back/dist/js/tabler.min.js?1674944402" defer></script>
+    @stack('scripts')
+    <script src="./back/dist/js/demo.min.js?1674944402" defer></script>
   </body>
 </html>
