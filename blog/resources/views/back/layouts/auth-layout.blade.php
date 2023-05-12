@@ -21,6 +21,7 @@
     <link href="./back/dist/css/tabler-payments.min.css?1674944402" rel="stylesheet"/>
     <link href="./back/dist/css/tabler-vendors.min.css?1674944402" rel="stylesheet"/>
     @stack('stylesheet')
+    @livewireStyles
     <link href="./back/dist/css/demo.min.css?1674944402" rel="stylesheet"/>
     <style>
       @import url('https://rsms.me/inter/inter.css');
@@ -39,6 +40,7 @@
     <script src="./back/dist/js/demo-theme.min.js?1674944402"></script>
     <script src="./back/dist/js/tabler.min.js?1674944402" defer></script>
     @stack('scripts')
+    @livewireScripts
     <script src="./back/dist/js/demo.min.js?1674944402" defer></script>
   </body>
 </html>
