@@ -118,8 +118,10 @@
             <a href="./profile.html" class="dropdown-item">Profile</a>
             <a href="#" class="dropdown-item">Feedback</a>
             <div class="dropdown-divider"></div>
-            <a href="./settings.html" class="dropdown-item">Settings</a>
-            <a href="./sign-in.html" class="dropdown-item">Logout</a>
+            <a href="./settings.html" class="dropdown-item">設定</a>
+            <a href="{{ route('author.logout') }}" class="dropdown-item" 
+            onclick="event.preventDefault();document.getElementById('logout-form').submit();">登出</a>
+            <form action="{{ route('author.logout') }}" id="logout-form" method="POST">@csrf</form>
           </div>
         </div>
       </div>
