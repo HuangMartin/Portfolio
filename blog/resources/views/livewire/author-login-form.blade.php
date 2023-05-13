@@ -5,9 +5,8 @@
         {{Session::get('fail')}}
       </div>
     @endif
-
-
-    <form wire:submit.prevent="LoginHandler()" method="post" autocomplete="off" novalidate="">
+    
+    <form wire:submit.prevent="LoginHandler()" method="post" autocomplete="off">
         <div class="mb-3">
           <label class="form-label">Email address</label>
           <input type="email" class="form-control" placeholder="your@email.com" wire:model="email">
