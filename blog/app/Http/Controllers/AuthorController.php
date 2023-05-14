@@ -15,4 +15,11 @@ class AuthorController extends Controller
         Auth::guard('web')->logout();
         return redirect()->route('author.login');
     }
+
+    public function ResetForm(Request $request, $token = null){
+        $data = [
+            'pageTitle'=>'重置密碼'
+        ];
+        return view('back.pages.auth.reset',$data)->with(['token'=>$token, 'email'=>$request->email]);
+    }
 }
