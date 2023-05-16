@@ -1,2 +1,2 @@
-Hi !! <b> {{ $name }} 
-{!! $body_message !!}</b>
+Hi !! <b> {{ $name }} </b>
+{!! $body_message !!}
