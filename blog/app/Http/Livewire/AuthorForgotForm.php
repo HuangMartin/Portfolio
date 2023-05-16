@@ -34,12 +34,14 @@ class AuthorForgotForm extends Component
 
         $user = User::where('email', $this->email)->first();
         $link = route('author.reset-form',['token'=>$token, 'email'=>$this->email]);
-        $body_message = "we are received a request to reset the password for <b>Blog</b> account associated with".
-        $this->email.".<br>You can reset your password by clicking the button below.";
+        $body_message = "我們收到您<b>Blog</b>帳號重新設定密碼的請求".
+        $this->email.".<br>請點擊下方按鈕重新設定密碼";
         $body_message.='<br>';
-        $body_message.='<a href>Reset password</a>';
+        $body_message.='<a href="'.$link.'" target="_blank style="color:#FFF;border-color:#22bc66;border-style:solid;
+        border-width:10px 180px; background-color:#22bc66;display:inline-block;text-decoration:none;border-radius:3px;
+        box-shadow:0 2px 3px rgba(0,0,0,0.16);-webkit-text-size-adjust:none;box-sizing:border-box">重新設定密碼</a>';
         $body_message.='<br>';
-        $body_message.='If you..........................';
+        $body_message.='如果您不需要重置密碼，請忽略此信件，謝謝!!';
 
         $data = array(
             'name'=>$user->name,
@@ -53,7 +55,7 @@ class AuthorForgotForm extends Component
         });
 
         $this->email = null;
-        session()->flash('success', 'We have..........');
+        session()->flash('success', '已傳送重置密碼的信件!!');
     }
 
     public function render()
