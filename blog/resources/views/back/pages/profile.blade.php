@@ -2,7 +2,7 @@
 @section('pageTitle', isset($pageTitle) ? $pageTitle : 'Profile')
 @section('content')
 
-@livewire('author-profile-header')
+    @livewire('author-profile-header')
     <hr>
     <div class="row">
         <div class="card">
@@ -20,33 +20,9 @@
                 <div class="tab-content">
                     <div class="tab-pane active show" id="tabs-details">
                         <div>
-                          <form method="post">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <div class="mb-3">
-                                  <label class="form-label">名字</label>
-                                  <input type="text" class="form-control" name="example-text-input" placeholder="name">
-                                </div>
-                              </div>
-                              <div class="col-md-4">
-                                <div class="mb-3">
-                                  <label class="form-label">使用者名稱</label>
-                                  <input type="text" class="form-control" name="example-text-input" placeholder="username">
-                                </div>
-                              </div>
-                              <div class="col-md-4">
-                                <div class="mb-3">
-                                  <label class="form-label">Email</label>
-                                  <input type="text" class="form-control" name="example-text-input" placeholder="email" disabled>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">簡介</label>
-                              <textarea class="form-control" name="example-textarea-input" rows="6" placeholder="寫點什麼吧...">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quia!</textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">保存變更</button>
-                          </form>
+
+                          @livewire('author-personal-details')
+
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-password">
