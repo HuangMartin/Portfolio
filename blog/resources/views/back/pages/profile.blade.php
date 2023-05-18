@@ -20,9 +20,7 @@
                 <div class="tab-content">
                     <div class="tab-pane active show" id="tabs-details">
                         <div>
-
                           @livewire('author-personal-details')
-
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-password">
