@@ -19,7 +19,9 @@ class AuthorPersonalDetails extends Component
     }
 
     public function UpdateDetails(){
-        
+        $this->validate([
+
+        ]);
     }
 
     public function render()
