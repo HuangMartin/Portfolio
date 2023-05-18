@@ -26,7 +26,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">簡介</label>
-            <textarea class="form-control" name="example-textarea-input" rows="6" placeholder="寫點什麼吧..." wire:model='blography'></textarea>
+            <textarea class="form-control" name="example-textarea-input" rows="6" placeholder="寫點什麼吧..." wire:model='biography'></textarea>
         </div>
         <button type="submit" class="btn btn-primary">保存變更</button>
     </form>

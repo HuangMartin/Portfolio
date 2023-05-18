@@ -8,19 +8,26 @@ use App\Models\User;
 class AuthorPersonalDetails extends Component
 {
     public $author;
-    public $name, $username, $email, $blography;
+    public $name, $username, $email, $biography;
 
     public function mount(){
         $this->author = User::find(auth('web')->id());
         $this->name = $this->author->name;
         $this->username = $this->author->username;
         $this->email = $this->author->email;
-        $this->blography = $this->author->blography;   
+        $this->biography = $this->author->biography;   
     }
 
     public function UpdateDetails(){
         $this->validate([
+                'name'=>'required|string',
+                'username'=>'required|unique:users,username,'.auth('web')->id()
+        ]);
 
+        User::where('id', auth('web')->id())->update([
+                'name'=>$this->name,
+                'username'=>$this->username,
+                'biography'=>$this->biography
         ]);
     }
 
