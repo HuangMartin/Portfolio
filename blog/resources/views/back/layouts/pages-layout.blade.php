@@ -39,10 +39,10 @@
         </div>
     </div>
     <script src="./back/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
-    <script src="./back/dist/libs/js/tabler.min.js"></script>
+    <script src="./back/dist/js/tabler.min.js"></script>
     @stack('scripts')
     @livewireScripts
-    <script src="./back/dist/libs/js/demo.min.js"></script>
+    <script src="./back/dist/js/demo.min.js"></script>
 </body>
 
 </html>
