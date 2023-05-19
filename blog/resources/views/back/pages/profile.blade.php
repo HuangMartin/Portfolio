@@ -19,13 +19,13 @@
                 <div class="tab-content">
                     <div class="tab-pane active show" id="tabs-details">
                         <div>
-                          @livewire('author-personal-details')
-
+                            @livewire('author-personal-details')
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-password">
-                        <div>Fringilla egestas nunc quis tellus diam rhoncus ultricies tristique enim at diam, sem nunc
-                            amet, pellentesque id egestas velit sed</div>
+                        <div>
+                            @livewire('author-change-password-form')
+                        </div>
                     </div>
                 </div>
             </div>
