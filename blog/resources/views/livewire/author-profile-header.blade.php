@@ -6,11 +6,11 @@
             <span class="avatar avatar-md" style="background-image: url(/samples/avatars/023m.jpg)"></span>
           </div>
           <div class="col-md-6">
-            <h2 class="page-title">Paweł Kuna</h2>
+            <h2 class="page-title">{{ $author->name }}</h2>
             <div class="page-subtitle">
               <div class="row">
                 <div class="col-auto">
-                  <a href="#" class="text-reset">UI Designer at Tabler</a>
+                  <a href="#" class="text-reset">@ {{ $author->username }} | {{ $author->authorType->name }}</a>
                 </div>
                 
               </div>
@@ -23,5 +23,5 @@
           </div>
         </div>
       </div>
-      
+
 </div>
