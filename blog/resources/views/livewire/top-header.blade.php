@@ -167,7 +167,7 @@
                     </span>
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./changelog.html">
+                    <a class="dropdown-item" href="{{route('author.settings')}}">
                       General Settings
                     </a>
                   </div>
