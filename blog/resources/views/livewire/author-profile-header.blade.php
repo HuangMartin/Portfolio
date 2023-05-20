@@ -17,7 +17,9 @@
             </div>
           </div>
           <div class="col-auto d-md-flex">
-            <a href="#" class="btn btn-primary">
+            <input type="file" name="file" id="changeAuthorPictureFile" class="d-none" onchange="this.dispatchEvent(new InputEvent('input'))">
+            <a href="#" class="btn btn-primary" onclick="event.preventDefault();document.getElementById('changeAuthorPictureFile').
+            click();">
               變更頭像
             </a>
           </div>

@@ -19,6 +19,7 @@
     <link href="./back/dist/css/tabler-flags.min.css" rel="stylesheet" />
     <link href="./back/dist/css/tabler-payments.min.css" rel="stylesheet" />
     <link href="./back/dist/css/tabler-vendors.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset('back/dist/libs/ijaboCropTool/ijaboCropTool.min.css')}}">
     @stack('stylesheets')
     @livewireStyles
 </head>
@@ -40,6 +41,7 @@
     </div>
     <script src="./back/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
     <script src="./back/dist/js/tabler.min.js"></script>
+    <script src="{{ asset('back/dist/libs/ijaboCropTool/ijaboCropTool.min.js')}}">
     @stack('scripts')
     @livewireScripts
     <script src="./back/dist/js/demo.min.js"></script>
