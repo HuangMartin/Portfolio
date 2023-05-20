@@ -170,9 +170,6 @@
                     <a class="dropdown-item" href="./changelog.html">
                       General Settings
                     </a>
-                    <a class="dropdown-item" href="./changelog.html">
-                      Portfile
-                    </a>
                   </div>
                 </li>
               </ul>

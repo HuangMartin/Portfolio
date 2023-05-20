@@ -56,7 +56,7 @@ class User extends Authenticatable
         if($value){
             return asset('back/dist/img/authors/'.$value);
         }else{
-            return asset('back/dist/img/authors/default-img.jpg');
+            return asset('back/dist/img/authors/default.jpg');
         }
     }
 }
