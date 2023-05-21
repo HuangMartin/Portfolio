@@ -15,7 +15,7 @@ class AuthorPersonalDetails extends Component
         $this->name = $this->author->name;
         $this->username = $this->author->username;
         $this->email = $this->author->email;
-        $this->biography = $this->author->biography;   
+        $this->biography = $this->author->biography;
     }
 
     public function UpdateDetails(){
