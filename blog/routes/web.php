@@ -25,4 +25,8 @@ Route::prefix('author')->name('author.')->group(function(){
         Route::view('/login','back.pages.auth.login')->name('login');
         Route::view('/forgot-password','back.pages.auth.forgot')->name('forgot-password');
     });
+
+    Route::middleware([])->group(function(){
+        Route::get('/home',[AuthorController::class,'index'])->name('home');
+    });
 });
