@@ -12,6 +12,7 @@
     <link href="./back/dist/css/tabler-payments.min.css" rel="stylesheet"/>
     <link href="./back/dist/css/tabler-vendors.min.css" rel="stylesheet"/>
     @stack('stylesheets')
+    @livewireStyles
     <link href="./back/dist/css/demo.min.css" rel="stylesheet"/>
   </head>
   <body >
@@ -33,6 +34,7 @@
 
     <script src="./back/dist/js/tabler.min.js"></script>
     @stack('scripts')
+    @livewireScripts
     <script src="./back/dist/js/demo.min.js"></script>
   </body>
 </html>
