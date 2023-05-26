@@ -10,7 +10,30 @@ class AuthorLoginForm extends Component
 {
     public $email, $password;
     public function LoginHandler(){
-        dd('123');
+        $this->validate([
+            'email'=>'required|email|exists:users,email',
+            'password'=>'required|min:5'
+        ],[
+            'email.required'=>'enter your email address',
+            'email.email'=>'Invalid email address',
+            'email.exists'=>'This email is not registered in database',
+            'password.required'=>'Password is required'
+        ]);
+
+        $creds = array('email'=>$this->email, 'password'=>$this->password);
+
+        if( Auth::guard('web')->attempt($creds) ){
+
+            $checkUser = User::where('email', $this->email)->first();
+            if($checkUser->blocked == 1){
+                Auth::guard('web')->logout();
+                return redirect()->route('author.login')->with('fail','your account had been blocked.');
+            }else{
+                return redirect()->route('author.home');
+            }
+        }else{
+            session()->flash('fail', 'Incorrect email or password');
+        }
     }
     public function render()
     {
